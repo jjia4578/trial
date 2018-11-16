@@ -9,7 +9,7 @@
 <body>
 	<h1>Welcome to Online Book Store!</h1>
 
-	<a href="userlogin">go to user login</a>
+	<a href="login">go to login</a>
 	<h1></h1>
 	<a href="register">go to register</a>
 	

@@ -31,18 +31,18 @@ public class StoreLoginController {
 			String password = user.getPassword();
 			User user2 = uDao.get(name);
 			
-			if(user2 == null) {
+			if(user2 == null || !user2.getPassword().equals(password)) {
 				return "wrongpassword";
 				
 			}
 			
-			else if (user2.getPassword().equals(password)) {
+			else {
 				return "welcome";
 				
 			}
-			else {
-				return "wrongpassword";
-			}
+//			else {
+//				return "wrongpassword";
+//			}
 
 		}
 }
